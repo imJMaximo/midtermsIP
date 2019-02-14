@@ -22,10 +22,26 @@ public class Draw extends JComponent{
 
 	Monster monster1;
 	Monster monster2;
+	Monster monster3;
+	Monster monster4;
+	Monster monster5;
+	Monster monster6;
+	Monster monster7;
+	Monster monster8;
+	Monster monster9;
+	Monster monster10;
 
 	public Draw(){
 		monster1 = new Monster(200, 200);
 		monster2 = new Monster(300, 200);
+		monster3 = new Monster(200, 300);
+		monster4 = new Monster(400, 300);
+		monster5 = new Monster(100, 100);
+		monster6 = new Monster(400, 400);
+		monster7 = new Monster(350, 150);
+		monster8 = new Monster(500, 250);
+		monster9 = new Monster(450, 300);
+		monster10 = new Monster(300, 500);
 
 		try{
 			image = ImageIO.read(resource);
@@ -132,5 +148,14 @@ public class Draw extends JComponent{
 
 		g.drawImage(monster1.image, monster1.xPos, monster1.yPos, this);
 		g.drawImage(monster2.image, monster2.xPos, monster2.yPos, this);
+		g.drawImage(monster3.image, monster3.xPos, monster3.yPos, this);
+		g.drawImage(monster4.image, monster4.xPos, monster4.yPos, this);
+		g.drawImage(monster5.image, monster5.xPos, monster5.yPos, this);
+		g.drawImage(monster6.image, monster6.xPos, monster6.yPos, this);
+		g.drawImage(monster7.image, monster7.xPos, monster7.yPos, this);
+		g.drawImage(monster8.image, monster8.xPos, monster8.yPos, this);
+		g.drawImage(monster9.image, monster9.xPos, monster9.yPos, this);
+		g.drawImage(monster10.image, monster10.xPos, monster10.yPos, this);
+
 	}
 }
