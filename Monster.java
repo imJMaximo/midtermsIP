@@ -11,7 +11,7 @@ public class Monster{
 	public BufferedImage image;
 	public URL resource = getClass().getResource("slime/idle0.png");
 
-	public Monster(){
+	public Monster(Draw comp){
 		try{
 			image = ImageIO.read(resource);
 		}
